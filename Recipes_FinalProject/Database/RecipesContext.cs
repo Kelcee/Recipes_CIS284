@@ -1,4 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿//Kelcee Chorba & Christine Jordan 
+//CIS 284: Week 10 Team Project
+//11.29.2020
+using Microsoft.EntityFrameworkCore;
+using Recipes_FinalProject.Database.Entity;
 
 namespace Recipes_FinalProject.Database
 {
@@ -13,6 +17,7 @@ namespace Recipes_FinalProject.Database
         protected override void OnModelCreating(ModelBuilder modelBuilder) //override model create
         {
             modelBuilder.Entity<Recipe>(); //creating recipes entity
+            //.HasData for seeding starting data
 
             base.OnModelCreating(modelBuilder);
         }
