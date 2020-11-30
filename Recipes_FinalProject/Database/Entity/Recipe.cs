@@ -20,9 +20,13 @@ namespace Recipes_FinalProject.Database.Entity
         public string CookTime { get; set; }
 
         public string Yields { get; set; }
+
+        [Display(Name = "Photo")]
         public string ImagePath { get; set; }
         public string Diet { get; set; }
-        
+
+        //Foreign Key
         public List<RecipeInstruction> Instructions { get; set; }
+        public List<RecipeIngredient> Ingredients { get; set; }
     }
 }

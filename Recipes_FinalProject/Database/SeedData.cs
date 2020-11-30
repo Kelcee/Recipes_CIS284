@@ -25,8 +25,23 @@ namespace Recipes_FinalProject.Database
                             PrepTime = "5 minutes",
                             CookTime = "5 minutes",
                             Yields = "Sandwich for 1",
-                            ImagePath = "./images/PBJ.jpg",
+                            ImagePath = "~/images/PBJ.jpg",
                             Diet = "Vegan, Vegetarian",
+                            Ingredients = new List<RecipeIngredient>
+                            {
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 Slices of Bread"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 scoops peanut butter."
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="3 scoop strawberry jelly."
+                                },
+                            },
                             Instructions = new List<RecipeInstruction>
                             {
                                 new RecipeInstruction

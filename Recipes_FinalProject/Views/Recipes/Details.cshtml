@@ -1,54 +1,78 @@
-﻿@model Recipes_FinalProject.Database.Entity.Recipe
+﻿@using Recipes_FinalProject.Database.Entity
+@model Recipes_FinalProject.Database.Entity.Recipe
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "How to create recipe.";
 }
 
-<h1>Details</h1>
+<h1>@ViewData["Title"]</h1>
 
-<div>
+<div id="RecipeDetails">
     <h4>Recipe</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Title)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Title)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Description)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Description)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.PrepTime)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.PrepTime)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.CookTime)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.CookTime)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Yields)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Yields)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.ImagePath)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ImagePath)
+        <dd class="col-sm-10">
+            <img class="img-fluid img-thumbnail" alt="Image" src="@Url.Content(Model.ImagePath)" height="200" width="200"/>
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Diet)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Diet)
         </dd>
     </dl>
 </div>
+<div id="RecipeIngredients">
+    <h3>Ingredients</h3>
+    <ul>
+        @foreach (RecipeIngredient ingredient in Model.Ingredients)
+        {
+            <li>@ingredient.Ingredient</li>
+        }
+    </ul>
+</div>
+<div id="RecipeInstructions">
+    <h3>Instructions</h3>
+    <ul>
+        @foreach (RecipeInstruction instruction in Model.Instructions.OrderBy(i => i.Step))
+        {
+            <li>@instruction.StepInstructions</li>
+        }
+    </ul>
+</div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
