@@ -21,6 +21,7 @@ namespace Recipes_FinalProject.Database.Entity
 
         public string Yields { get; set; }
         public string ImagePath { get; set; }
+        public string Diet { get; set; }
         
         public List<RecipeInstruction> Instructions { get; set; }
     }

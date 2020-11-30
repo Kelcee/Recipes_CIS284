@@ -16,8 +16,8 @@ namespace Recipes_FinalProject.Database
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) //override model create
         {
-            modelBuilder.Entity<Recipe>(); //creating recipes entity
-            //.HasData for seeding starting data
+            modelBuilder.Entity<Recipe>();
+            modelBuilder.Entity<RecipeInstruction>();            
 
             base.OnModelCreating(modelBuilder);
         }
