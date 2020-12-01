@@ -717,7 +717,902 @@ namespace Recipes_FinalProject.Database
                                 }
                             }
                         }
+                       ,new Recipe
+                        {
+                            Title = "Cockroach Clusters",
+                            Description = "A Honeydukes specialty and Weasley boys' favorite, chocolatey cockroach clusters " +
+                            "are bite-sized treats that are perfect for tricking friends into eating bugs. Our version is a bit " +
+                            "more tame, substituting peanuts for roaches. ",
+                            PrepTime = "10 minutes",
+                            CookTime = "5 minutes",
+                            Yields = "3 dozen",
+                            ImagePath = "~/images/cockroachClusters.jpg",
+                            Diet = "none",
+                            Ingredients = new List<RecipeIngredient>
+                            {
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 (12 ounce) package semi-sweet chocolate chips"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 (12 ounce) package peanut butter chips"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="12 ounces raw Spanish peanuts"
+                                },
+                               
+                            },
+                            Instructions = new List<RecipeInstruction>
+                            {
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 1,
+                                    StepInstructions = "Combine chocolate chips and peanut butter chips in top of double boiler. " +
+                                    "Stir frequently over low to medium heat until melted; add peanuts and stir."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 2,
+                                    StepInstructions = "Drop by teaspoon full on wax paper. Allow to cool."
+                                },                               
+                            }
+                        }
+                       ,new Recipe
+                        {
+                            Title = "Adult Butterbeer",
+                            Description = "Although the butterbeer in the books isn't alcoholic, " +
+                            "that shouldn't stop you from splashing a little booze in your next batch." +
+                            " Here, spiced rum and butterscotch schnapps add deep flavor with a kick. ",
+                            PrepTime = "5 minutes",
+                            CookTime = "5 minutes",
+                            Yields = "1 serving",
+                            ImagePath = "~/images/adultBeer.jpg",
+                            Diet = "none",
+                            Ingredients = new List<RecipeIngredient>
+                            {
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 fluid ounce spiced rum (such as Sailor Jerry)"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 fluid ounce butterscotch schnapps"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/2 teaspoon imitation butter flavoring"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 (12 fluid ounce) can or bottle cream soda"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 small scoop vanilla ice cream (Optional)"
+                                },
 
+                            },
+                            Instructions = new List<RecipeInstruction>
+                            {
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 1,
+                                    StepInstructions = "Stir rum and butterscotch schnapps together in a frosted 14-ounce mug."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 2,
+                                    StepInstructions = "Pour butter flavoring into the cream soda, then turn cream soda over to pour " +
+                                    "quickly into the chilled mug. Gently drop the ice cream into the soda mixture."
+                                },
+                            }
+                        }
+                       ,new Recipe
+                        {
+                            Title = "Magic Wands",
+                            Description = "You won't have to trek to Ollivanders Wand Shop to get yourself a magical wand." +
+                            " Instead, create a custom wand by dipping pretzels in chocolate and decorating with " +
+                            "sprinkles and candy.",
+                            PrepTime = "30 minutes",
+                            CookTime = "30 minutes",
+                            Yields = "30 servings",
+                            ImagePath = "~/images/magicWands.jpg",
+                            Diet = "none",
+                            Ingredients = new List<RecipeIngredient>
+                            {
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 (15 ounce) package pretzel rods"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 (16 ounce) container prepared vanilla frosting"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/2 cup sprinkles or colored sugar for decoration"
+                                },                          
+
+                            },
+                            Instructions = new List<RecipeInstruction>
+                            {
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 1,
+                                    StepInstructions = "Dip each pretzel rod into frosting, not quite half way. " +
+                                    "Roll in sprinkles to coat the frosting. Abracadabra, you have a magic wand!"
+                                },                               
+                            }
+                        }
+                       ,new Recipe
+                        {
+                            Title = "Acceptance Letters",
+                            Description = "Flavored with lemon and orange zest, these dainty folded cookies are the perfect recreation of the Hogwarts acceptance letters.",
+                            PrepTime = "25 minutes",
+                            CookTime = "8 minutes",
+                            Yields = "4 dozen",
+                            ImagePath = "~/images/letters.jpg",
+                            Diet = "none",
+                            Ingredients = new List<RecipeIngredient>
+                            {
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 cups all-purpose flour"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="½ cup white sugar"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 teaspoon salt"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 cup butter"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 teaspoons lemon zest"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 tablespoon orange zest"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/2 cup sour cream"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 cup candied cherries, chopped"
+                                },
+
+                            },
+                            Instructions = new List<RecipeInstruction>
+                            {
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 1,
+                                    StepInstructions = "Preheat oven to 475 degrees F (245 degrees C)."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 2,
+                                    StepInstructions = "Blend flour, sugar and salt. Cut in butter, lemon zest and orange zest until mixture resembles coarse meal. Blend sour cream in evenly."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 3,
+                                    StepInstructions = "Gather dough into firm ball. Divide in half. Roll on well-floured surface to 1/8 inch thickness. Cut in 3 x 2 inch pieces; fold ends to center to resemble an envelope, overlapping slightly; seal with tiny piece of candied cherry."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 4,
+                                    StepInstructions = "Place on ungreased baking sheet. Brush tops with water; sprinkle with sugar. Bake 6 to 8 minutes."
+                                },
+                            }
+                        }
+                       ,new Recipe
+                        {
+                            Title = "Harry's Birthday Cake",
+                            Description = " Although the book version of Harry's 11th birthday describes a chocolate cake, any movie-goer remembers the bright pink version that was presented by Hagrid in the film. Recreate that iconic dessert with a batch of sweet strawberry cake.",
+                            PrepTime = "30 minutes",
+                            CookTime = "1 Hour",
+                            Yields = "12 servings",
+                            ImagePath = "~/images/harrysCake.jpg",
+                            Diet = "none",
+                            Ingredients = new List<RecipeIngredient>
+                            {
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 (3 ounce) package strawberry flavored Jell-O"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="½ cup cold water"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 (18.25 ounce) package white cake mix"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="4 eggs"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 cup vegetable oil"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="3 tablespoons all-purpose flour"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 (10 ounce) package frozen strawberries, thawed"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="6 tablespoons butter"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 cups confectioners' sugar"
+                                },
+
+                            },
+                            Instructions = new List<RecipeInstruction>
+                            {
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 1,
+                                    StepInstructions = "Preheat the oven to 325 degrees F (165 degrees C). Grease and flour three 9 inch round cake pans."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 2,
+                                    StepInstructions = "In a large bowl, dissolve the gelatin in cold water; stir in the cake mix, eggs, vegetable oil, flour and 1/2 of the strawberries. Beat for 5 minutes on the medium speed of an electric mixer. Divide the batter evenly between the prepared cake pans."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 3,
+                                    StepInstructions = "Bake for 30 to 35 minutes in the preheated oven, or until the layers spring back when lightly pressed in the center. Cool cakes in the pans on wire racks."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 4,
+                                    StepInstructions = "To Make Frosting: Cream the butter, sugar and the remaining half of the strawberries in a medium bowl until light and fluffy, adding additional confectioners' sugar if needed for a spreadable consistency. Spread the frosting between layers and over the top and sides of cake."
+                                },
+                            }
+                        }
+                       ,new Recipe
+                        {
+                            Title = "Owl Cupcakes",
+                            Description = "Ever useful in the wizarding world, owls play a key part in the entire Harry Potter series. Recreate their wide-eyed look with these adorable owl cupcakes. Sandwich cookies and candy coated chocolates are cleverly used to make the features. ",
+                            PrepTime = "30 minutes",
+                            CookTime = "12 minutes",
+                            Yields = "24 servings",
+                            ImagePath = "~/images/owls.jpg",
+                            Diet = "none",
+                            Ingredients = new List<RecipeIngredient>
+                            {
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 cups white sugar"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 cups all-purpose flour, sifted"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 cup unsweetened cocoa powder"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 teaspoons baking powder"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 teaspoon salt"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/2 teaspoon baking soda"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 cup buttermilk"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/2 cup vegetable oil"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 eggs"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 teaspoon vanilla extract"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 cup hot water"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/4 cup heavy whipping cream"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 1/2 tablespoons heavy whipping cream"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 1/2 cups mascarpone cheese"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="7 tablespoons unsweetened cocoa powder"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/4 cup white sugar"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="48 chocolate sandwich cookies (such as Oreo)"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="48 brown candy-coated milk chocolate pieces (such as M&M's)"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="24 orange or yellow candy-coated milk chocolate pieces (such as M&M's)"
+                                },
+
+                            },
+                            Instructions = new List<RecipeInstruction>
+                            {
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 1,
+                                    StepInstructions = "Preheat oven to 350 degrees F (175 degrees C). Line 2 muffin tins with paper liners."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 2,
+                                    StepInstructions = "Combine 2 cups sugar, flour, 1 cup cocoa powder, baking powder, salt, and baking soda in a bowl."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 3,
+                                    StepInstructions = "Whisk buttermilk, vegetable oil, eggs, and vanilla extract in a large bowl. Add flour mixture; mix until well-combined. Pour in hot water; stir until batter is smooth. Divide batter evenly among muffin tins."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 4,
+                                    StepInstructions = "Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 12 minutes. Transfer cupcakes to a wire rack and let cool completely, about 20 minutes."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 5,
+                                    StepInstructions = "Whip 3/4 cup plus 1 1/2 tablespoon heavy cream in a bowl with an electric mixer until soft peaks form. Fold in 1 1/2 cup plus 2 tablespoons mascarpone cheese, 7 tablespoons cocoa powder, and 1/4 cup sugar gently to make frosting."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 6,
+                                    StepInstructions = "Spread 1 tablespoon frosting over each cooled cupcake."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 7,
+                                    StepInstructions = "Twist chocolate sandwich cookies open, leaving all cream filling on 1 side. Place 2 cookies, cream filling-side up, on each cupcake to make owl eyes. Place a brown milk chocolate piece on each cookie to create pupils. Insert an orange or yellow milk chocolate piece in the center to make a beak."
+                                },
+                            }
+                        }
+                       ,new Recipe
+                        {
+                            Title = "Pretzel Broomstick",
+                            Description = "Although they're no Nimbus 2000, these bite-size broomsticks will make an adorable addition to your snack table. Several reviewers suggested using chives to make the tie extra easy.",
+                            PrepTime = "10 minutes",
+                            CookTime = "10 minutes",
+                            Yields = "12 servings",
+                            ImagePath = "~/images/brooms.jpg",
+                            Diet = "none",
+                            Ingredients = new List<RecipeIngredient>
+                            {
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="4 string cheese sticks, or more as needed"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="12 pretzel sticks"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 leaf fresh spinach, cut into strips, or more as needed"
+                                },                               
+                            },
+                            Instructions = new List<RecipeInstruction>
+                            {
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 1,
+                                    StepInstructions = "Cut each string cheese stick into thirds. Snip the ends of each third into thin strings to look like a broom."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 2,
+                                    StepInstructions = "Place a pretzel stick into each piece of string cheese to create the broom handle. Tie a spinach strip around the cheese."
+                                },                                
+                            }
+                        }
+                       ,new Recipe
+                        {
+                            Title = "Chocolate Spiders",
+                            Description = "Ron Weasley's worst fear, these chocolatey spiders will please even the biggest arachnophobe. Chow mein noodles are tossed with chocolate confectioners coating before being decorated with candy eyes. ",
+                            PrepTime = "5 minutes",
+                            CookTime = "25 minutes",
+                            Yields = "20 servings",
+                            ImagePath = "~/images/chocSpiders.jpg",
+                            Diet = "none",
+                            Ingredients = new List<RecipeIngredient>
+                            {
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 pound chocolate confectioners' coating"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 (8.5 ounce) package chow mein noodles"
+                                },                               
+                            },
+                            Instructions = new List<RecipeInstruction>
+                            {
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 1,
+                                    StepInstructions = "Chop the chocolate confectioners' coating and place into a heatproof bowl over simmering water. " +
+                                    "Cook, stirring occasionally until melted and smooth. Remove from heat and stir in the chow mein noodles so they are evenly distributed." +
+                                    " Spoon out to desired size onto waxed paper. Let cool completely before storing or serving."
+                                },
+                            }
+                        }
+                       ,new Recipe
+                        {
+                            Title = "Chocolate Spiders",
+                            Description = "Feel like you’re in potions class with this bewitching beverage. For a nonalcoholic version, just omit the vodka.",
+                            PrepTime = "5 minutes",
+                            CookTime = "no minutes",
+                            Yields = "20 servings",
+                            ImagePath = "~/images/witchesBrew.jpg",
+                            Diet = "none",
+                            Ingredients = new List<RecipeIngredient>
+                            {
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 cup sugar"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 cup water"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="8 medium kiwifruit, peeled and quartered"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/2 cup fresh mint leaves"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 cup vodka, optional"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 liter ginger ale, chilled"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="Ice cubes"
+                                },
+                            },
+                            Instructions = new List<RecipeInstruction>
+                            {
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 1,
+                                    StepInstructions = "In a small saucepan, bring sugar and water to a boil. Cook and stir until sugar is dissolved; set aside to cool."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 2,
+                                    StepInstructions = "Place the kiwi, mint and sugar syrup in a blender; cover and process until blended. Pour into a large pitcher; stir in vodka if desired. Refrigerate until chilled."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 3,
+                                    StepInstructions = "Just before serving, stir in ginger ale. Serve over ice."
+                                },
+                            }
+                        }
+                       ,new Recipe
+                        {
+                            Title = "Wingless Snitches",
+                            Description = "These eggnog-flavored snitches are so good, you’ll feel like you’ve won a Quidditch game with each bite.",
+                            PrepTime = "45 minutes",
+                            CookTime = "no minutes",
+                            Yields = "2 1/2 dozen",
+                            ImagePath = "~/images/snitches.jpg",
+                            Diet = "none",
+                            Ingredients = new List<RecipeIngredient>
+                            {
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="3-1/2 cups white baking chips, divided"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/2 cup butter, softened"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="3 ounces cream cheese, softened"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 tablespoons dark rum"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/4 teaspoon vanilla extract"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 tablespoons shortening"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="Ground nutmeg, optional"
+                                },
+                            },
+                            Instructions = new List<RecipeInstruction>
+                            {
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 1,
+                                    StepInstructions = "In a microwave, melt 1-1/2 cups baking chips; stir until smooth. In a small bowl, cream butter and cream cheese until smooth. Add rum and vanilla. Beat in melted chips. Refrigerate, covered, 1 hour or until set."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 2,
+                                    StepInstructions = "Shape mixture into 1-in. balls; place on a waxed paper-lined baking sheet. Refrigerate 2 hours or until firm and slightly dry to the touch."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 3,
+                                    StepInstructions = "In a microwave, melt shortening and remaining baking chips; stir until smooth. Dip balls in mixture; allow excess to drip off. Return to baking sheet; if desired, sprinkle with nutmeg."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 4,
+                                    StepInstructions = "Refrigerate 2 hours or until set. Store between layers of waxed paper in an airtight container in the refrigerator."
+                                },
+                            }
+                        }
+                       ,new Recipe
+                        {
+                            Title = "Hogwarts Hats",
+                            Description = "These eggnog-flavored snitches are so good, you’ll feel like you’ve won a Quidditch game with each bite.",
+                            PrepTime = "50 minutes",
+                            CookTime = "10 minutes",
+                            Yields = "16 servings",
+                            ImagePath = "~/images/hats.jpg",
+                            Diet = "none",
+                            Ingredients = new List<RecipeIngredient>
+                            {
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 tube (16-1/2 ounces) refrigerated sugar cookie dough"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/4 cup baking cocoa"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 cup Corn Pops"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 cup bite-sized Shredded Wheat"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 cup square oat cereal"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/2 cup dried cherries"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/2 cup salted pumpkin seeds or pepitas, optional"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/3 cup butter, cubed"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 cups semisweet chocolate chips, divided"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1-1/3 cups confectioners' sugar"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 tablespoon shortening"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="16 ice cream sugar cones"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="Orange and green sprinkles"
+                                },
+                            },
+                            Instructions = new List<RecipeInstruction>
+                            {
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 1,
+                                    StepInstructions = "Preheat oven to 350°. Let cookie dough stand at room temperature for 5-10 minutes to soften. In a large bowl, beat cookie dough and cocoa until blended. Shape into 1-1/2-in. balls; place 3 in. apart on ungreased baking sheets. Coat bottom of a glass with cooking spray. Press cookies with bottom of glass to flatten, recoating in cooking spray as needed."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 2,
+                                    StepInstructions = "Bake 10-12 minutes or until set. Cool completely on pans on wire racks."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 3,
+                                    StepInstructions = "In a large bowl, combine corn pops, Shredded Wheat, oat cereal, cherries and, if desired, pumpkin seeds. In a microwave, melt butter and 1/2 cup chocolate chips; stir until smooth. Pour over cereal mixture; toss to coat."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 4,
+                                    StepInstructions = "Place confectioners' sugar in a large resealable plastic bag; add cereal mixture. Close bag and shake to coat. Spread onto baking sheets to cool."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 5,
+                                    StepInstructions = "In a microwave, melt shortening and remaining chocolate chips; stir until smooth. Spread over sugar cones. Freeze until set, about 10 minutes. Fill each cone with 2 tablespoons cereal mixture."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 6,
+                                    StepInstructions = "Place a filled cone on each cookie; pipe melted chocolate around base of cones to adhere. Decorate as desired with sprinkles and remaining melted chocolate. Refrigerate until set, about 10 minutes. Serve with remaining cereal mixtur"
+                                },
+                            }
+                        }
+                       ,new Recipe
+                        {
+                            Title = "Polyjuice Potion",
+                            Description = "While the real polyjuice potion takes a month (and a few human hairs) to brew, this deliciously sweet version takes moments to make. ",
+                            PrepTime = "10 minutes",
+                            CookTime = "0 minutes",
+                            Yields = "20 servings",
+                            ImagePath = "~/images/potions.jpg",
+                            Diet = "none",
+                            Ingredients = new List<RecipeIngredient>
+                            {
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 quarts water"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 cups sugar"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 envelopes unsweetened lemon-lime soft drink mix"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 can (46 ounces) unsweetened pineapple juice"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 liter ginger ale, chilled"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 quart lime sherbet"
+                                },
+                            },
+                            Instructions = new List<RecipeInstruction>
+                            {
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 1,
+                                    StepInstructions = "In a punch bowl, combine the water, sugar and soft drink mix; stir until dissolved. Stir in pineapple juice. Refrigerate until chilled. Just before serving, stir in ginger ale and top with scoops of sherbet."
+                                },
+                            }
+                        }
+                       ,new Recipe
+                        {
+                            Title = "Dumbledore's Sherbet Lemon",
+                            Description = "Dumbledore loved this sweet-tart treat so much, “sherbet lemon” was the password to his office!",
+                            PrepTime = "25 minutes",
+                            CookTime = "10 minutes",
+                            Yields = "1 1/2 pounds",
+                            ImagePath = "~/images/lemon.jpg",
+                            Diet = "none",
+                            Ingredients = new List<RecipeIngredient>
+                            {
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 envelopes unflavored gelatin"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1-1/4 cups water, divided"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2-1/4 cups sugar, divided"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2 packages (3 ounces each) lemon gelatin"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/2 cup lemon juice"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 teaspoon grated lemon zest"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/4 cup clear edible glitter"
+                                },
+                            },
+                            Instructions = new List<RecipeInstruction>
+                            {
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 1,
+                                    StepInstructions = "Line an 8-inch square pan with foil and spray foil with cooking spray; set aside."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 2,
+                                    StepInstructions = "In a small bowl, sprinkle unflavored gelatin over 1/3 cup water; set aside."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 3,
+                                    StepInstructions = "In a small saucepan, combine 2 cups sugar and remaining water. Bring to a boil over medium heat. Cook and stir until the sugar dissolves. Cook, without stirring, until candy thermometer reads 260° (hard-ball stage). Remove from the heat."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 4,
+                                    StepInstructions = "Stir lemon gelatin and unflavored gelatin mixture into hot syrup; stir until sugar dissolves. Stir in lemon juice and zest. Pour into prepared pan. Cover and refrigerate overnight or until candy is set."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 5,
+                                    StepInstructions = "Combine edible glitter and remaining sugar; spread half of mixture over a 14x12-in. piece of paper. Invert candy onto the parchment. Cut candy into 48 triangles and coat with remaining glitter mixture. Store candy in an airtight container at room temperature for up to 1 week."
+                                },
+                            }
+                        }
+                       ,new Recipe
+                        {
+                            Title = "Acid Pops",
+                            Description = "While the Honeydukes version of lollipops can burn a hole in your tongue, ours are certified Muggle safe.",
+                            PrepTime = "5 minutes",
+                            CookTime = "30 minutes",
+                            Yields = "1 dozen",
+                            ImagePath = "~/images/lolli.jpg",
+                            Diet = "none",
+                            Ingredients = new List<RecipeIngredient>
+                            {
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1 cup light corn syrup"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="2/3 cup sugar"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1-1/2 teaspoons lemon, apple or cherry flavoring"
+                                },
+                                new RecipeIngredient
+                                {
+                                    Ingredient ="1/8 teaspoon yellow, green or red liquid food coloring"
+                                },
+                            },
+                            Instructions = new List<RecipeInstruction>
+                            {
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 1,
+                                    StepInstructions = "Place lollipop sticks in hard candy molds or arrange sticks 3 in. apart on greased foil-lined baking sheets; set aside."
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 2,
+                                    StepInstructions = "In a heavy saucepan, combine corn syrup and sugar. Bring to a boil over medium heat, stirring occasionally. Cover and cook for 3 minutes to dissolve sugar crystals. Uncover and cook over medium-high heat, without stirring, until a candy thermometer reads 300° (hard-crack stage)."
+
+                                },
+                                new RecipeInstruction
+                                {
+                                    RecipeId = 1,
+                                    Step = 3,
+                                    StepInstructions = "Remove from the heat; stir in flavoring and food coloring, keeping face away from mixture as odor is very strong. Immediately pour into prepared molds or pour free-form over ends of lollipop sticks on baking sheets. Let cool before removing."
+                                },
+                            }
+                        }
                 });
 
 
