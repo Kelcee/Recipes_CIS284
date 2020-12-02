@@ -56,7 +56,7 @@ namespace Recipes_FinalProject
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Recipes}/{action=FoodWheel}/{id?}"); //find controller recipes, use food wheel
             });
         }
     }

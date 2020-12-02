@@ -1,0 +1,51 @@
+﻿@*Christine Jordan and Kelcee Chorba 12.1.2020
+   REF: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow&fbclid=IwAR3MuqvykHgfcNAVDwszJPNSyy0SkPkPfN966kOFCr4eaE8d13OZL-kDzLI  *@
+@model IEnumerable<Recipes_FinalProject.Database.Entity.Recipe>
+@{
+    var recipes = Model.ToArray();
+}
+
+
+<div class="slideshow-container">
+
+    @for (int i = 0; i < recipes.Length; i++)
+    {
+        <div class="foodwheel food-fade">
+            <div class="numbertext">@($"{i + 1} / {recipes.Length}")</div>
+            <img src="@Url.Content(recipes[i].ImagePath)" style="width: 100%" height="200" width="200" alt="@recipes[i].Title">
+            <div class="text">@recipes[i].Title</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    }
+</div>
+<br>
+
+@*<div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+
+    </div>*@
+
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var slides = document.getElementsByClassName("foodwheel");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+</script>

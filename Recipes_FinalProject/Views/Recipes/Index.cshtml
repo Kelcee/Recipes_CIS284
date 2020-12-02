@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Recipes_FinalProject.Database.Entity.Recipe>
 
 @{
-    ViewData["Title"] = "Available Recipes";
+    ViewData["Title"] = $"Available Recipes ({Model.Count()})";
 }
 
 <h1>@ViewData["Title"]</h1>

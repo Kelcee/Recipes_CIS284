@@ -381,57 +381,7 @@ namespace Recipes_FinalProject.Database
                                 }
                             }
                         }
-                       ,new Recipe
-                        {
-                            Title = "Lemon Drop Bark",
-                            Description = "Albus Dumbledore adores lemon drop candy so much that it's used as " +
-                            "his office password in Chamber of Secrets. Honor the Hogwarts Headmaster's sweet tooth " +
-                            "with this brightly colored bark, decorated with crushed lemon drop candies. ",
-                            PrepTime = "10 minutes",
-                            CookTime = "32 minutes",
-                            Yields = "12 servings",
-                            ImagePath = "~/images/LDbark.jpg",
-                            Diet = "Vegan, Vegetarian",
-                            Ingredients = new List<RecipeIngredient>
-                            {
-                                new RecipeIngredient
-                                {
-                                    Ingredient ="1 (12 ounce) package white chocolate chips (such as Nestle®)"
-                                },
-                                new RecipeIngredient
-                                {
-                                    Ingredient ="3/4 cup lemon drop candies (such as Brach's)"
-                                },
-                            },
-                            Instructions = new List<RecipeInstruction>
-                            {
-                                new RecipeInstruction
-                                {
-                                    RecipeId = 1,
-                                    Step = 1,
-                                    StepInstructions = "Place white chocolate chips in a microwave-safe 2-cup measuring cup; " +
-                                    "heat in microwave until melted, about 2 minutes. Stir until smooth."
-
-                                },
-                                new RecipeInstruction
-                                {
-                                    RecipeId = 1,
-                                    Step = 2,
-                                    StepInstructions = "Place lemon drop candies in a resealable plastic bag." +
-                                    " Place this bag into another resealable bag, creating a double bag so the candies " +
-                                    "don't puncture the bag. Crack candies with rolling pin or mallet until broken into small pieces."
-                                },
-                                new RecipeInstruction
-                                {
-                                    RecipeId = 1,
-                                    Step = 3,
-                                    StepInstructions = "Stir cracked candies into melted white chocolate. " +
-                                    "Smooth mixture onto a piece of aluminum foil to about 1/4-inch thickness. " +
-                                    "Chill in refrigerator until set, at least 30 minutes. " +
-                                    "Break bark into small pieces and store in an air-tight container in the refrigerator."
-                                },
-                            }
-                        }
+                       
                        ,new Recipe
                         {
                             Title = "Butterbeer Sugar Cookies",
