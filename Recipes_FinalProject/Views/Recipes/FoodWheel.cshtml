@@ -1,11 +1,32 @@
 ﻿@*Christine Jordan and Kelcee Chorba 12.1.2020
-   REF: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow&fbclid=IwAR3MuqvykHgfcNAVDwszJPNSyy0SkPkPfN966kOFCr4eaE8d13OZL-kDzLI  *@
-@model IEnumerable<Recipes_FinalProject.Database.Entity.Recipe>
+    REF: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow&fbclid=IwAR3MuqvykHgfcNAVDwszJPNSyy0SkPkPfN966kOFCr4eaE8d13OZL-kDzLI  *@
+@model FoodWheelModel
 @{
-    var recipes = Model.ToArray();
+    var recipes = Model.Recipes.ToArray();
 }
 
 
+@*Meeting validation requirements for term project*@ 
+
+@if (Model.SignUp == null || !ViewData.ModelState.IsValid) 
+{
+    using (Html.BeginForm(FormMethod.Post))
+    {
+        <p>
+            @Html.LabelFor(model => model.SignUp.Email)
+            @Html.TextBoxFor(model => model.SignUp.Email)
+            @Html.ValidationMessageFor(model => model.SignUp.Email)
+            <input type="submit" value="Signup" />
+        </p>
+    }
+}
+else
+{
+    <p>Thank you for signing up.</p>
+}
+
+<h1>Wheel Of Food</h1>
+<hr />
 <div class="slideshow-container">
 
     @for (int i = 0; i < recipes.Length; i++)

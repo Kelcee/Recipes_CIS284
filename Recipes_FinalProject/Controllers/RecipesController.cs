@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Christine Jordan and Kelcee Chorba 12.2.2020 W10 Term Project
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -23,22 +24,32 @@ namespace Recipes_FinalProject.Controllers
 
 
         // GET: Recipes
-        public async Task<IActionResult> Index(SearchModel model)
+        public async Task<IActionResult> Index(string dietSearch)
         {
             var recipes = databaseContext.Recipes.AsQueryable();
-            if (!string.IsNullOrWhiteSpace(model.DietSearch))
+            if (!string.IsNullOrWhiteSpace(dietSearch))
             {
-                recipes = recipes.Where(recipe => recipe.Diet.Contains(model.DietSearch));
+                recipes = recipes.Where(recipe => recipe.Diet.Contains(dietSearch));
             }
             return View(await recipes.ToArrayAsync());
         }
 
+        [HttpGet]
         public async Task<IActionResult> FoodWheel()
         {
             var recipes = await databaseContext.Recipes.ToArrayAsync(); //Getting all recipes from database
-            return View(recipes); //Sending model to foodwheel view
+            var model = new FoodWheelModel { Recipes = recipes };
+
+            return View(model); //Sending model to foodwheel view
         }
 
+        [HttpPost]
+        public async Task<IActionResult> FoodWheel(FoodWheelModel model)
+        {
+            var recipes = await databaseContext.Recipes.ToArrayAsync(); //Getting all recipes from database
+            model.Recipes = recipes;
+            return View(model);
+        }
 
         // GET: Recipes/Details/5
         public async Task<IActionResult> Details(int? id)
