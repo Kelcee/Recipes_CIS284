@@ -1449,7 +1449,7 @@ namespace Recipes_FinalProject.Database
                             PrepTime = "10 minutes",
                             CookTime = "0 minutes",
                             Yields = "20 servings",
-                            ImagePath = "~/images/potions.jpg",
+                            ImagePath = "~/images/potion.jpg",
                             Diet = "none",
                             Ingredients = new List<RecipeIngredient>
                             {
