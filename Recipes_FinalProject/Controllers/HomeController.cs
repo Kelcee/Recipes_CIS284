@@ -23,7 +23,7 @@ namespace Recipes_FinalProject.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult AboutUs()
         {
             return View();
         }
