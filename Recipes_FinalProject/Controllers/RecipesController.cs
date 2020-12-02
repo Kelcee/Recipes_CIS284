@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Recipes_FinalProject.Database;
 using Recipes_FinalProject.Database.Entity;
+using Recipes_FinalProject.Models;
 
 //Christine Jordan and Kelcee Chorba 12.1.2020 
 namespace Recipes_FinalProject.Controllers
@@ -22,12 +23,12 @@ namespace Recipes_FinalProject.Controllers
 
 
         // GET: Recipes
-        public async Task<IActionResult> Index(string dietSearch)
+        public async Task<IActionResult> Index(SearchModel model)
         {
             var recipes = databaseContext.Recipes.AsQueryable();
-            if (!string.IsNullOrWhiteSpace(dietSearch))
+            if (!string.IsNullOrWhiteSpace(model.DietSearch))
             {
-                recipes = recipes.Where(recipe => recipe.Diet.Contains(dietSearch));
+                recipes = recipes.Where(recipe => recipe.Diet.Contains(model.DietSearch));
             }
             return View(await recipes.ToArrayAsync());
         }

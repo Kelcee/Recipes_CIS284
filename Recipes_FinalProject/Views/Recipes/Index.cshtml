@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Recipes_FinalProject.Database.Entity.Recipe>
+﻿@*Christine Jordan and Kelcee Chorba 12.1.2020 W10 Team Project*@
+@model IEnumerable<Recipes_FinalProject.Database.Entity.Recipe>
 
 @{
     ViewData["Title"] = $"Available Recipes ({Model.Count()})";
@@ -9,6 +10,14 @@
 @*<p>
     <a asp-action="Create">Create New</a>
 </p>*@
+@using (Html.BeginForm())
+{
+    var searchModel = new SearchModel();
+<p>
+    Search by Dietary Needs: @Html.TextBox("model", searchModel.DietSearch)
+    <input type="submit" value="Search" />
+</p>
+}
 <table class="table">
     <thead>
         <tr>
