@@ -217,3 +217,9 @@ dd{
     color:darkgoldenrod !important;
     font-family: Papyrus;
 }
+.text{
+    color:orangered;
+    font-weight:700;
+    font-size:xx-large;
+    font-family:Papyrus;
+}
