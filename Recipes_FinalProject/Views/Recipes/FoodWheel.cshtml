@@ -7,47 +7,51 @@
 
 
 @*Meeting validation requirements for term project*@ 
-
-@if (Model.SignUp == null || !ViewData.ModelState.IsValid) 
-{
-    using (Html.BeginForm(FormMethod.Post))
+<div>
+    @if (Model.SignUp == null || !ViewData.ModelState.IsValid)
     {
-        <p>
-            @Html.LabelFor(model => model.SignUp.Email)
-            @Html.TextBoxFor(model => model.SignUp.Email)
-            @Html.ValidationMessageFor(model => model.SignUp.Email)
-            <input type="submit" value="Signup" class="btn btn-success"/>
-        </p>
+        using (Html.BeginForm(FormMethod.Post))
+        {
+            <p>
+                @Html.LabelFor(model => model.SignUp.Email)
+                @Html.TextBoxFor(model => model.SignUp.Email)
+                @Html.ValidationMessageFor(model => model.SignUp.Email)
+                <input type="submit" value="Signup" class="btn btn-success" />
+            </p>
+        }
     }
-}
-else
-{
-    <p>Thank you for signing up.</p>
-}
-
-<h1>Wheel Of Food</h1>
-<hr />
-<div class="slideshow-container">
-
-    @for (int i = 0; i < recipes.Length; i++)
+    else
     {
-        <div class="foodwheel food-fade">
-            <div class="numbertext">@($"{i + 1} / {recipes.Length}")</div>
-            <img src="@Url.Content(recipes[i].ImagePath)" style="width: 100%" height="200" width="200" alt="@recipes[i].Title">
-            <div class="text">@recipes[i].Title</div>
+        
+        <div class="alert alert-dismissible alert-success">
+            <strong>Thank You!</strong> You have successfully signed up!
         </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     }
+
+    <h1>Wheel Of Food</h1>
+    <hr />
+    <div class="slideshow-container">
+
+        @for (int i = 0; i < recipes.Length; i++)
+        {
+            <div class="foodwheel food-fade">
+                <div class="numbertext">@($"{i + 1} / {recipes.Length}")</div>
+                <img src="@Url.Content(recipes[i].ImagePath)" style="width: 100%" height="200" width="200" alt="@recipes[i].Title">
+                <div class="text">@recipes[i].Title</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        }
+    </div>
+    <br>
+
+    @*<div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+
+        </div>*@
+
+
 </div>
-<br>
-
-@*<div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-
-    </div>*@
-
-
 <script>
     var slideIndex = 1;
     showSlides(slideIndex);

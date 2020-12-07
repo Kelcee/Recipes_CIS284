@@ -196,3 +196,6 @@ img {
         font-size: 11px
     }
 }
+.AboutPageImage{
+    background-image:url(../images/background.jpg);
+}

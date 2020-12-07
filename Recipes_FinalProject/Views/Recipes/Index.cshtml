@@ -15,7 +15,7 @@
     var searchModel = new SearchModel();
 <p>
     Search by Dietary Needs: @Html.TextBox("model", searchModel.DietSearch)
-    <input type="submit" value="Filter" />
+    <input type="submit" value="Filter" class="btn btn-success" />
 </p>
 }
 <table class="table">
@@ -69,7 +69,7 @@
             <td>@Html.DisplayFor(modelItem => item.Diet)</td>
             <td></td>
             <td>
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                <a asp-action="Details" asp-route-id="@item.Id"><span class="badge badge-pill badge-warning">Details</span></a>
             </td>
         </tr>
 }
