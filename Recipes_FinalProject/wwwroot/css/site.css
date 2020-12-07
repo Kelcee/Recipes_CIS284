@@ -196,6 +196,19 @@ img {
         font-size: 11px
     }
 }
-.AboutPageImage{
-    background-image:url(../images/background.jpg);
+body {
+    background-color: #0d0122;
+}
+h1{
+    color:sandybrown !important;
+}
+header nav {
+    background-color: #590325 !important;
+}
+.navbar-brand {
+    color: #cf9607 !important;
+}
+.nav-link {
+    color: #619900 !important;
+    font-family: Papyrus;
 }
