@@ -1,4 +1,4 @@
-﻿ @*Christine Jordan and Kelcee Chorba W10 Project 12.2.2020*@
+﻿@*Christine Jordan and Kelcee Chorba W10 Project 12.2.2020*@
 @using Recipes_FinalProject.Database.Entity
 @model Recipes_FinalProject.Database.Entity.Recipe
 
@@ -46,7 +46,7 @@
             @Html.DisplayNameFor(model => model.ImagePath)
         </dt>
         <dd class="col-sm-10">
-            <img class="img-fluid img-thumbnail" alt="Image" src="@Url.Content(Model.ImagePath)" height="200" width="200"/>
+            <img class="img-fluid img-thumbnail" alt="Image" src="@Url.Content(Model.ImagePath)" height="200" width="200" />
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Diet)
@@ -56,24 +56,40 @@
         </dd>
     </dl>
 </div>
+
 <div id="RecipeIngredients">
     <h3>Ingredients</h3>
     <ul class="list-group">
-        @foreach (RecipeIngredient ingredient in Model.Ingredients)
-        {
-            <li class="list-group-item d-flex justify-content-between align-items-center">@ingredient.Ingredient</li>
+        @{
+            int ingredientCount = 1;
+            foreach (RecipeIngredient ingredient in Model.Ingredients)
+            {
+                <li class="list-group-item d-flex justify-content-lg-start align-items-center">
+                    <span class="badge badge-primary badge-pill">@ingredientCount</span>&nbsp;&nbsp;@ingredient.Ingredient
+                </li>
+                ingredientCount++;
+            }
         }
     </ul>
 </div>
+<br />
+<br />
 <div id="RecipeInstructions">
     <h3>Instructions</h3>
-    <ul>
-        @foreach (RecipeInstruction instruction in Model.Instructions.OrderBy(i => i.Step))
-        {
-            <li >@instruction.StepInstructions</li>
+    <ul class="list-group">
+        @{
+            int instructionCount = 1;
+            foreach (RecipeInstruction instruction in Model.Instructions.OrderBy(i => i.Step))
+            {
+                <li class="list-group-item d-flex justify-content-lg-start align-items-lg-start">
+                    <span class="badge badge-primary badge-pill">@instructionCount</span>&nbsp;&nbsp;@instruction.StepInstructions
+                </li>
+                instructionCount++;
+            }
         }
     </ul>
 </div>
+
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
