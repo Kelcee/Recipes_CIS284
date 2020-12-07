@@ -223,3 +223,7 @@ dd{
     font-size:xx-large;
     font-family:Papyrus;
 }
+.img-thumbnail{
+    margin:auto !important;
+    
+}
