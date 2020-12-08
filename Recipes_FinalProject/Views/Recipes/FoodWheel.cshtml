@@ -36,14 +36,20 @@
         {
             <div class="foodwheel food-fade">
                 <div class="numbertext">@($"{i + 1} / {recipes.Length}")</div>
-                <img src="@Url.Content(recipes[i].ImagePath)" style="width: 100%" height="200" width="200" alt="@recipes[i].Title">
+                <img src="@Url.Content(recipes[i].ImagePath)" style="width: 60%; margin: 0 20% 0 20%"; height="200" width="200" alt="@recipes[i].Title">
                 <div class="text">@recipes[i].Title</div>
             </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" style="margin-left:20%" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" style="margin-right:20%" onclick="plusSlides(1)">&#10095;</a>
         }
     </div>
     <br>
+    <div id="introvideocontainer">
+        <video id="introvideo"width="500" height="240" controls autoplay>
+            <source src="~/videos/recipevideo.mp4" type="video/mp4"/>
+            Your browser does not support this video!
+        </video>
+    </div>
 
     @*<div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
