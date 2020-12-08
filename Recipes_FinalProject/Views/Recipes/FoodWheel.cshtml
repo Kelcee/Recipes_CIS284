@@ -31,12 +31,15 @@
     <h1>The Alchemy Kitchen</h1>
     <hr />
     <div class="slideshow-container">
-
+        @*REFERENCE HERE!!:*@
         @for (int i = 0; i < recipes.Length; i++)
         {
             <div class="foodwheel food-fade">
                 <div class="numbertext">@($"{i + 1} / {recipes.Length}")</div>
-                <img src="@Url.Content(recipes[i].ImagePath)" style="width: 60%; margin: 0 20% 0 20%"; height="200" width="200" alt="@recipes[i].Title">
+                
+                <a href="@Url.Action("Details", "Recipes", new {id=recipes[i].Id })">
+                    <img src="@Url.Content(recipes[i].ImagePath)" style="width: 60%; margin: 0 20% 0 20%" ; height="200" width="200" alt="@recipes[i].Title">
+                </a>
                 <div class="text">@recipes[i].Title</div>
             </div>
             <a class="prev" style="margin-left:20%" onclick="plusSlides(-1)">&#10094;</a>
