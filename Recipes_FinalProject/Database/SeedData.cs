@@ -18,48 +18,8 @@ namespace Recipes_FinalProject.Database
                 if (context.Recipes.Any()) { return; }
 
                 context.Recipes.AddRange(new[] {
+                        
                         new Recipe
-                        {
-                            Title = "Peanut Butter Jelly Sandwich",
-                            Description = "A yummy sandwich.",
-                            PrepTime = "5 minutes",
-                            CookTime = "5 minutes",
-                            Yields = "Sandwich for 1",
-                            ImagePath = "~/images/PBJ.jpg",
-                            Diet = "Vegan, Vegetarian",
-                            Ingredients = new List<RecipeIngredient>
-                            {
-                                new RecipeIngredient
-                                {
-                                    Ingredient ="2 Slices of Bread"
-                                },
-                                new RecipeIngredient
-                                {
-                                    Ingredient ="2 scoops peanut butter."
-                                },
-                                new RecipeIngredient
-                                {
-                                    Ingredient ="3 scoop strawberry jelly."
-                                },
-                            },
-                            Instructions = new List<RecipeInstruction>
-                            {
-                                new RecipeInstruction
-                                {
-                                    RecipeId = 1,
-                                    Step = 1,
-                                    StepInstructions = "Get peanut butter and jelly."
-
-                                },
-                                new RecipeInstruction
-                                {
-                                    RecipeId = 1,
-                                    Step = 2,
-                                    StepInstructions = "Make sandwich."
-                                }
-                            }
-                        }
-                        ,new Recipe
                         {
                             Title = "Butter Beer",
                             Description = "a caramel delight from the wizarding world right into your belly.",
