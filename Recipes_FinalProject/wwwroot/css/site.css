@@ -61,6 +61,7 @@ html {
 }
 
 body {
+    background-color: #0d0122;
     /* Margin bottom by footer height */
     margin-bottom: 60px;
 }
@@ -71,6 +72,7 @@ body {
     width: 100%;
     white-space: nowrap;
     line-height: 60px; /* Vertically center the text there */
+    background-color: #0d0122;
 }
 
 
@@ -79,10 +81,6 @@ body {
     box-sizing: border-box
 }
 
-body {
-    background-color: #0d0122;
-    margin: 0;
-}
 
 .foodwheel {
     display: block;
