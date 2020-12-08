@@ -15,7 +15,7 @@
             <p>
                 @Html.LabelFor(model => model.SignUp.Email)
                 @Html.TextBoxFor(model => model.SignUp.Email)
-                @Html.ValidationMessageFor(model => model.SignUp.Email)
+                @Html.ValidationMessageFor(model => model.SignUp.Email, null ,new { @class= "validationerror" })
                 <input type="submit" value="Signup" class="btn btn-success" />
             </p>
         }

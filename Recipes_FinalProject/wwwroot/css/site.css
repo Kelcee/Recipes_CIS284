@@ -234,3 +234,10 @@ dd{
 #introvideocontainer{
     width:100%;
 }
+.validationerror{
+    color:red;
+}
+label{
+    color:darkgoldenrod;
+    font-family:Papyrus;
+}
