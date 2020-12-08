@@ -29,7 +29,7 @@ namespace Recipes_FinalProject.Controllers
             var recipes = databaseContext.Recipes.AsQueryable();
             if (!string.IsNullOrWhiteSpace(dietSearch))
             {
-                recipes = recipes.Where(recipe => recipe.Diet.Contains(dietSearch));
+                recipes = recipes.Where(recipe => recipe.Diet.Contains(dietSearch,StringComparison.CurrentCultureIgnoreCase));//ignore case sensitivity in search
             }
             return View(await recipes.ToArrayAsync());
         }
