@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Recipes_FinalProject.Models;
 
+//Christine Jordan and Kelcee Chorba W10 Project
 namespace Recipes_FinalProject.Controllers
 {
     public class HomeController : Controller
